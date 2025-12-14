@@ -1,0 +1,19 @@
+{
+  "name": "MERN Stack Dev Container",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  // "features" block removed to prevent network errors
+  "forwardPorts": [3000, 5000, 27017],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "mongodb.mongodb-vscode",
+        "rangav.vscode-thunder-client"
+      ]
+    }
+  },
+  "remoteUser": "node"
+}
