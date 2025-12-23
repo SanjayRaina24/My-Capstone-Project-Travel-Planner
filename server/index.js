@@ -14,8 +14,6 @@ app.use(cors());
 app.use(express.json());
 
 // Database Connection (Your Cloud URL is hardcoded here, which is fine for deployment)
-const MONGO_URI = 'mongodb+srv://bhanusanjay123_db_user:Sanjayraina12@cluster0.n7lxupo.mongodb.net/?appName=Cluster0';
-
 mongoose.connect(MONGO_URI)
   .then(() => console.log('✅ MongoDB Connected Successfully'))
   .catch(err => console.error('❌ MongoDB Connection Error:', err));
